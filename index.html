@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THRESHOLD · An Emerging Tech Decision Simulation</title>
+  <meta name="description" content="A comic-book simulation about deciding whether, how, where and for whom powerful new technologies should exist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand">
+      <h1 class="logo">THRESHOLD</h1>
+      <p class="sub">An emerging-tech decision simulation · Vanguard Universe</p>
+    </div>
+    <nav class="tracker" id="tracker" aria-label="Simulation phases"></nav>
+    <button class="btn ghost small" data-action="reset" type="button">Restart</button>
+  </header>
+
+  <div class="app">
+    <main id="main" tabindex="-1"></main>
+    <aside id="sidebar" aria-label="Telemetry"></aside>
+  </div>
+
+  <footer class="foot">
+    All characters, companies and places are original and fictional, inspired by the superhero genre.
+    Real-world parallels are cited in the debrief. Model numbers are simplified for teaching.
+  </footer>
+
+  <dialog id="modal"><div id="modal-body"></div></dialog>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
